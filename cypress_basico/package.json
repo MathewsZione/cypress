@@ -5,7 +5,9 @@
   "main": "src/index.html",
   "scripts": {
     "cy:run": "npx cypress run",
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:mobile": "cypress open --config viewportWidth=370 viewportHeight=660",
+    "cy:mobile:headless":"cypress run --config viewportWidth=370 viewportHeight=660"
   },
   "repository": {
     "type": "git",
