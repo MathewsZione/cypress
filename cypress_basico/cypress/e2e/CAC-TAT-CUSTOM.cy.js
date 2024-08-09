@@ -6,3 +6,9 @@ beforeEach(() => {
 it('envia o formuário com sucesso usando um comando customizado', () => {
     cy.fillMandatoryFieldsAndSubmit()
 });
+
+Cypress._.times(2,()=>{
+    it('envia o formuário com sucesso usando um comando customizado', () => {
+        cy.fillMandatoryFieldsAndSubmit()
+    })
+})
